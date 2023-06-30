@@ -1,0 +1,21 @@
+.image-slider {
+    width: 800px; /* Điều chỉnh kích thước slider theo ý muốn */
+    height: 600px;
+    overflow: hidden; /* Ẩn các phần tử vượt quá kích thước slider */
+  }
+  
+  .slider-item {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: slide 5s infinite; /* Thời gian chuyển đổi và lặp vô hạn */
+  }
+  
+  @keyframes slide {
+    0% { background-image: url('./img/gai-xinh-1.jpg'); } /* Ảnh thứ nhất */
+    33% { background-image: url('./img/anh-gai-xinh-02.jpg'); } /* Ảnh thứ hai */
+    66% { background-image: url('./img/gai-xinh-trung-quoc-sexy-2.jpg'); } /* Ảnh thứ ba */
+    100% { background-image: url('./img/anh-gai-xinh-02.jpg'); } /* Quay lại ảnh thứ nhất */
+  }
+  
